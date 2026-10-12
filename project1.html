@@ -1,0 +1,184 @@
+<?php
+// project1.php
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lysenthera – Mikael Greenwood</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<body data-page="project1">
+  <div id="layout-wrapper">
+  <?php require_once 'header.php'; ?>
+
+  <div id="page-content-wrapper">
+    <main id="page-content" class="main-content sqs-layout sqs-grid-12 columns-12">
+      <div class="column column-blank-left"></div>
+
+      <div class="column column-main">
+
+        <section id="top-script" class="section-block top-script-section">
+          <h1>Lysenthera</h1>
+          <img src="images/lysenthera_campfire.png" alt="Project 1 screenshot" class="screenshot glow-image">
+          <p>
+            This game was a 3D VR action-adventure/platformer/puzzle game made in a Virtual Reality development course, 
+            and it was the first time I’ve worked in VR. It was the most demanding project so far in my program, as I 
+            was the group’s only programmer.
+          </p>
+        </section>
+
+        <div class="jump-sections">
+          <h2>Jump to Sections</h2>
+          <nav class="project-section-nav">
+            <a href="#section-1" class="button-link">What is Lysenthera?</a>
+            <a href="#section-2" class="button-link">The process of adapting to VR</a>
+            <a href="#section-3" class="button-link">Aftermath</a>
+          </nav>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <section id="my-role" class="section-block my-role">
+          <h2>My role and contributions</h2>
+
+          <div class="my-role-columns">
+            <div class="my-role-column-left">
+              <p><strong>Role:</strong> Gameplay Programmer / Designer</p>
+              <p><strong>Tools:</strong> Unity, C#, Github</p>
+              <p><strong>Team:</strong> Ash, Jessica, Jae and I</p>
+              <p><strong>Project span:</strong> September - December 2025</p>
+            </div>
+
+            <div class="my-role-column-right">
+              <p>
+                I implemented core gameplay systems including player movement, VR interactions, and some object
+                behaviors, focusing on responsive controls and readable feedback.
+              </p>
+              <p>
+                I collaborated closely with designers to prototype new mechanics, iterating quickly on level flow and
+                encounter pacing based on playtest data.
+              </p>
+              <p>
+                I maintained technical documentation and supported the team with tooling improvements, such as
+                debugging utilities.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="section-1" class="section-block project-description-section">
+          <h2>What is Lysenthera?</h2>
+          <!-- <figure>
+            <img src="images/project1.png" alt="Feature screenshot 1" class="screenshot glow-image">
+            <figcaption>Caption describing this feature or moment.</figcaption>
+          </figure> -->
+          <!--
+          <p> One aspect of the game that was complicated code-wise was the root and bulb system. Throughout the 
+            game’s world, bulbs are rooted into the dirt. When they are shot, they vary in their response; some
+            temporarily sprout platforms, grow vines the player can climb, or retract walls of roots. The player 
+            progresses by shooting these bulbs, that allow them to progress further through the game. In each land, 
+            there is an invisible object that facilitates communication between these related elements, detecting 
+            when one of the bulbs are shot and then triggering the right response.
+          </p> -->
+          <p>
+            An immersive VR survival-mystery game where players step into the shoes of a stranded scientist cut off 
+            from their team after a mysterious expedition incident. Trapped in an uncharted, mutated forest with 
+            broken communications and blocked exits, you must navigate an unnatural ecosystem to survive. By exploring 
+            a silent, abandoned laboratory hidden deep within the infection, players uncover dark experimental secrets 
+            and must find a cure for the forest's mutation to secure their escape.
+          </p>
+          <div class="image-row-grid">
+              <figure>
+                <img src="images/frenz_shootingBulb1.jpg" alt="Project 1 screenshot" class="glow-image image-grid-photo">
+                <figcaption>The player shooting a bulb to make it bloom.</figcaption>
+              </figure>
+              <figure>
+                <img src="images/frenz_shootingBulb2.jpg" alt="Project 1 screenshot" class="glow-image image-grid-photo ">
+                <figcaption>The bulb has been shot so the flower becomes a platform.</figcaption>
+              </figure>
+          </div>
+          
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="section-2" class="section-block project-description-section">
+          <h2>The process of adapting to VR</h2>
+          <p> On the whole, we encountered many issues where the game, which was partially inspired by first-person computer games, did not transfer well into VR, which presented some of this project's biggest challenges.
+          </p>
+          <br>
+          <h3>Navigating disconnect between touch and sight</h3>
+          <div class="image-row-grid">
+              <figure>
+                <img src="images/lysenthera_rootbridge.jpg" alt="Project 1 screenshot" class="glow-image image-grid-photo">
+                <figcaption>Player at a tall height looking at the bridge.</figcaption>
+              </figure>
+              <figure>
+                <img src="images/lysenthera_rootbridge2.jpg" alt="Project 1 screenshot" class="glow-image image-grid-photo ">
+                <figcaption>The bridge being walked on as they player is small.</figcaption>
+              </figure>
+            </div>
+          <p>
+            For instance, we found that moving heavy objects (like a teammate's design for pushable boulders) felt unnatural and disorienting as a result of the disconnect between what they are feeling and what they are seeing. I pivoted the design toward VR-native interactions by replacing the features that do not cause that disconnect with new objects that feel more natural.
+          </p>
+          <p> 
+            For instance, to be able to remove the pushable boulders and also expand on the scaling mechanic which is central to this game, I created a scalable box. It can be picked up using raycasting when
+             it is small, but be used as a platform when it is large.  
+            </p>
+            <br>
+            <h3>Navigating the cybersickness related to player scaling</h3>
+            <div class="image-row-grid">
+              <figure>
+                <img src="images/lysenthera_scalableboxes.jpg" alt="Project 1 screenshot" class="glow-image image-grid-photo">
+                <figcaption>The player can shoot the box in order to make it bigger.</figcaption>
+              </figure>
+              <figure>
+                <img src="images/lysenthera_scalableboxes2.jpg" alt="Project 1 screenshot" class="glow-image image-grid-photo ">
+                <figcaption>Player can pick up the object using raycasting when it is small.</figcaption>
+              </figure>
+            </div>
+            <p>
+A related issue that we found during playtesting is that scaling the player to be taller in virtual reality can be disorienting because they suddenly lose their familiar real-world sense of scale, making the virtual floor feel like it is dropping away beneath them and causing a mismatch between their physical height and their visual perspective.           </p>
+          <p> 
+            Many of our playtesters would continue playing at a taller height even if they didn’t need to, but would report that over the course of their playthroughs they started feeling queasy, sometimes quitting. To rectify this, I created an object called the root bridge, which is a platform that can only be walked on if the player is at a very short height. When a player is small, their camera is close to the ground, the player's perspective is stabilized, locking their eyes onto a single, stable path. Using these were my way of getting players to shrink down. Subsequent playtests I conducted did not have as many reports of cybersickness.
+            </p>
+          <p>
+          </p>
+          
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="section-3" class="section-block project-description-section">
+          <h2>Aftermath</h2>
+          <p>The game was well-received by playtesters and the teaching team. I still think that there are a lot of improvements needed to be done to minimize cybersickness, but I felt content overall with how the project turned out. Having very little experience with virtual reality prior to working on this project, I was not sure what to expect, but walking out of the experience, I have become better at adapting to unfamiliar game development tools and programming languages. Furthermore, I have felt significantly improved at facilitating playtests and designing solutions to the issues that present themselves. 
+ </p>
+          <figure>
+            <img src="images/project1-section3.jpg" alt="Feature screenshot 3" class="screenshot glow-image">
+            <figcaption>Caption describing this feature or moment.</figcaption>
+          </figure>
+          
+          
+          
+        </section>
+      </div>
+
+      <div class="column column-blank-right"></div>
+      <div class="column column-blank-right"></div>
+      <div class="column column-blank-right"></div>
+    </main>
+    
+  </div>
+
+  </div>
+
+  <?php require_once 'footer.php'; ?>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

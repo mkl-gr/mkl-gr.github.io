@@ -1,0 +1,90 @@
+<?php
+// index.php
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikael Greenwood – Game Developer</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body data-page="home">
+  <div id="layout-wrapper">
+    <?php require_once 'header.php'; ?>
+
+    <div id="page-content-wrapper">
+      <main id="page-content" class="main-content sqs-layout sqs-grid-12 columns-12">
+        <div class="column column-blank-left"></div>
+
+        <div class="column column-main">
+          <section class="section-block home-hero">
+            <h1>Hello, I am Mikael Greenwood - Game Developer</h1>
+            <p class="home-hero-description">
+              I'm a programmer from Vancouver, Canada who has studied a variety of different types of art and programming in Simon Fraser University's Interactive Arts and Technology program. 
+              However, no other creative pursuit gives me more enjoyment than the process of bringing intriguing ideas for games to life.
+            </p>
+          </section>
+
+          <section class="section-block projects-section">
+            <h2>Projects</h2>
+
+            <div class="projects-grid">
+              <div class="project-container" data-target="project1.php">
+                <img src="images/lysenthera_campfire.png" alt="Project 1" class="project-container-image glow-image">
+                <div class="project-container-overlay">
+                  <h3 class="project-container-title">Lysenthera</h3>
+                  <p class="project-container-description">
+                    A Virtual Reality action-adventure game that I made in a Virtual Reality development course.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-container" data-target="project2.php">
+                <img src="images/frenz_boss1attackenemy.jpg" alt="Project 2" class="project-container-image glow-image">
+                <div class="project-container-overlay">
+                  <h3 class="project-container-title">Fren-Z</h3>
+                  <p class="project-container-description">
+                    A brief description of Project 2 goes here.
+                  </p>
+                </div>
+              </div>
+              
+              <!--
+              <div class="project-container" data-target="project3.php">
+                <img src="images/project3.jpg" alt="Project 3" class="project-container-image glow-image">
+                <div class="project-container-overlay">
+                  <h3 class="project-container-title">Project 3 Title</h3>
+                  <p class="project-container-description">
+                    A brief description of Project 3 goes here.
+                  </p>
+                </div>
+              </div> -->
+
+            </div>
+          </section>
+        </div>
+
+        <div class="column column-blank-right"></div>
+        <div class="column column-blank-right"></div>
+        <div class="column column-blank-right"></div>
+        
+      </main>
+      
+    </div>
+  </div>
+
+  <!-- <div class="back-to-top-wrapper">
+      <button id="back-to-top" class="back-to-top-button">
+        ↑ Go back to top of page
+      </button>
+    </div> -->
+
+    <!-- <button id="back-to-top" class="back-to-top-button">My role</button> -->
+
+  
+  <?php require_once 'footer.php'; ?>
+  <script src="js/main.js"></script>
+</body>
+</html>

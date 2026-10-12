@@ -1,0 +1,148 @@
+/* project.css */
+
+.top-script-section {
+  margin-bottom: 3rem;
+}
+
+.top-script-section h1 {
+  margin-bottom: 1.5rem;
+}
+
+.top-script-section img {
+  margin-bottom: 1.2rem;
+}
+
+.top-script-section p {
+  max-width: 800px;
+}
+
+/* My role */
+.my-role {
+  margin-bottom: 3rem;
+}
+
+.my-role h2 {
+  margin-bottom: 1.4rem;
+}
+
+.my-role-columns {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 1.5rem;
+}
+
+.my-role-column-left p {
+  margin-bottom: 0.6rem;
+}
+
+.my-role-column-right p {
+  margin-bottom: 0.9rem;
+}
+
+/* Project description sections */
+.project-description-section {
+  margin-bottom: 6rem;
+}
+
+.jump-sections {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+.project-description-section h2 {
+  margin-bottom: 2.3rem;
+}
+
+.project-description-section figure {
+  margin-bottom: 1.5rem;
+}
+
+.project-description-section img {
+  border-radius: 6px;
+}
+
+.project-description-section figcaption {
+  font-size: 0.85rem;
+  color: #b0b0b0;
+  margin-top: 0.3rem;
+}
+
+/* Section nav */
+.project-section-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.project-section-nav .button-link {
+  width: 100%;
+  text-align: left;
+  max-width: 280px;
+
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  background-color: rgba(255, 0, 150, 0.25);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.back-to-top-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.glow-image {
+  height: auto;
+  display: block;
+}
+
+.screenshot {
+    max-width: 60%;
+}
+
+.image-grid-photo {
+    margin: 0.5rem 0rem;
+    max-width: 90%;
+}
+
+.project-section-nav .button-link:hover {
+  background-color: rgba(255, 0, 150, 0.5);
+  transform: translateY(-2px);
+}
+
+.project-section-nav .button-link:active {
+  background-color: rgba(255, 0, 150, 1);
+  transform: translateY(0);
+}
+
+/* Responsive: my-role columns collapse handled in global.css */
+@media (max-width: 640px) {
+  .my-role-columns {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+/* Responsive: my-role columns collapse handled in global.css */
+@media (min-width: 641px) {
+  .project-description-section {
+    margin-bottom: 9rem;
+  }
+
+  .my-role {
+    margin-bottom: 5rem;
+  }
+}
+
+/* Responsive: my-role columns collapse handled in global.css */
+@media (max-width: 1024px) {
+  .my-role-columns {
+    grid-template-columns: 1fr;
+  }
+}
