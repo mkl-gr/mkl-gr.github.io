@@ -11,32 +11,33 @@
   <link rel="stylesheet" href="css/about.css">
 </head>
 <body data-page="about">
-  <header id="header" class="site-header">
-    <nav class="side-nav">
-      <a href="index.html" class="logo-link">
-        <img src="images/mg_logo.png" alt="Logo" class="logo-image glow-image">
-      </a>
+  <div id="layout-wrapper">
+    <header id="header" class="site-header">
+      <nav class="side-nav">
+        <a href="index.html" class="logo-link">
+          <img src="images/mg_logo.png" alt="Logo" class="logo-image glow-image">
+        </a>
 
-      <!-- Mobile toggle (only visible on phone via CSS) -->
-      <button class="nav-toggle nav-link" type="button">
-        Toggle menu
-      </button>
+        <!-- Mobile toggle (only visible on phone via CSS) -->
+        <button class="nav-toggle nav-link" type="button">
+          Toggle menu
+        </button>
 
-      <div id="nav-lists" class="nav-lists">
-        <ul id="primary-nav" class="nav-list">
-          <li><a href="index.html" class="nav-link nav-home">My Projects</a></li>
-          <li><a href="project1.html" class="nav-link nav-project1">Lysenthera</a></li>
-          <li><a href="project2.html" class="nav-link nav-project2">Fren-z</a></li>
-          <!-- <li><a href="project3.php" class="nav-link nav-project3">Project 3</a></li> -->
-        </ul>
+        <div id="nav-lists" class="nav-lists">
+          <ul id="primary-nav" class="nav-list">
+            <li><a href="index.html" class="nav-link nav-home">My Projects</a></li>
+            <li><a href="project1.html" class="nav-link nav-project1">Lysenthera</a></li>
+            <li><a href="project2.html" class="nav-link nav-project2">Fren-z</a></li>
+            <!-- <li><a href="project3.php" class="nav-link nav-project3">Project 3</a></li> -->
+          </ul>
 
-        <ul id="secondary-nav" class="nav-list">
-          <li><a href="about.html" class="nav-link nav-about">About Me</a></li>
-          <li><a href="contact.html" class="nav-link nav-contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+          <ul id="secondary-nav" class="nav-list">
+            <li><a href="about.html" class="nav-link nav-about">About Me</a></li>
+            <li><a href="contact.html" class="nav-link nav-contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
   <div id="page-content-wrapper">
     <main id="page-content" class="main-content sqs-layout sqs-grid-12 columns-12">
@@ -74,7 +75,27 @@
       <div class="column column-blank-right"></div>
       <div class="column column-blank-right"></div>
     </main>
-    <?php require_once 'footer.php'; ?>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <span class="footer-left">© Mikael Greenwood</span>
+        <div class="back-to-top-wrapper">
+          <button id="back-to-top" class="back-to-top-button">
+            ↑ Go back to top of page
+          </button>
+        </div>
+        <!-- <a href="#" class="footer-linkedin">
+          <img src="images/linkedin.png" alt="LinkedIn logo">
+        </a> -->
+
+        <a href="https://www.linkedin.com/in/mikael-gr" 
+          class="footer-linkedin" 
+          target="_blank" 
+          rel="noopener">
+          <img src="images/linkedin.png" alt="LinkedIn logo">
+        </a>
+        
+      </div>
+    </footer>
 
   </div>
 
