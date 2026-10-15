@@ -9,6 +9,10 @@
   <title>Lysenthera – Mikael Greenwood</title>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/project.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
 </head>
 <body data-page="project1">
   <div id="layout-wrapper">
@@ -102,14 +106,7 @@
             <img src="images/project1.png" alt="Feature screenshot 1" class="screenshot glow-image">
             <figcaption>Caption describing this feature or moment.</figcaption>
           </figure> -->
-          <!--
-          <p> One aspect of the game that was complicated code-wise was the root and bulb system. Throughout the 
-            game’s world, bulbs are rooted into the dirt. When they are shot, they vary in their response; some
-            temporarily sprout platforms, grow vines the player can climb, or retract walls of roots. The player 
-            progresses by shooting these bulbs, that allow them to progress further through the game. In each land, 
-            there is an invisible object that facilitates communication between these related elements, detecting 
-            when one of the bulbs are shot and then triggering the right response.
-          </p> -->
+          <!-- -->
           <p>
             An immersive VR survival-mystery game where players step into the shoes of a stranded scientist cut off 
             from their team after a mysterious expedition incident. Trapped in an uncharted, mutated forest with 
@@ -117,7 +114,15 @@
             a silent, abandoned laboratory hidden deep within the infection, players uncover dark experimental secrets 
             and must find a cure for the forest's mutation to secure their escape.
           </p>
-          <div class="image-row-grid">
+          <p>
+            The scientist wakes up surrounded by ancient plants and fungi, which they have read about but have not seen in front of their eyes.
+            I implemented all of the player's interactions, such as picking up objects and shooting far away objects. 
+            Changing from Unity's default keyboard controls to VR headgear and controllers was achieved through utilising Unity's Oculus XR library. 
+            To narrow the information gap between the player and the protaganist, I implemented tooltip UI that informs the player of their controls, 
+            as well as how each plant can be interacted with. 
+            Using tooltip UI as opposed to a menu allowed me to offer a more immersive gameplay experience.
+            </p>
+            <div class="image-row-grid">
               <figure>
                 <img src="images/frenz_shootingBulb1.jpg" alt="Project 1 screenshot" class="glow-image image-grid-photo">
                 <figcaption>The player shooting a bulb to make it bloom.</figcaption>
@@ -127,6 +132,13 @@
                 <figcaption>The bulb has been shot so the flower becomes a platform.</figcaption>
               </figure>
           </div>
+          <p> One aspect of the game that was complicated code-wise was the root and bulb system. Throughout the 
+            game’s world, bulbs are rooted into the dirt. When they are shot, they vary in their response; some
+            temporarily sprout platforms, grow vines the player can climb, or retract walls of roots. The player 
+            progresses by shooting these bulbs, that allow them to progress further through the game. In each land, 
+            there is an invisible object that facilitates communication between these related elements, detecting 
+            when one of the bulbs are shot and then triggering the right response.
+          </p>
           
         </section>
 
@@ -145,14 +157,14 @@
               </figure>
               <figure>
                 <img src="images/lysenthera_rootbridge2.jpg" alt="Project 1 screenshot" class="glow-image image-grid-photo ">
-                <figcaption>The bridge being walked on as they player is small.</figcaption>
+                <figcaption>The player is walking on a root bridge, which is possible because they have shrunk themselves.</figcaption>
               </figure>
             </div>
           <p>
             For instance, we found that moving heavy objects (like a teammate's design for pushable boulders) felt unnatural and disorienting as a result of the disconnect between what they are feeling and what they are seeing. I pivoted the design toward VR-native interactions by replacing the features that do not cause that disconnect with new objects that feel more natural.
           </p>
           <p> 
-            For instance, to be able to remove the pushable boulders and also expand on the scaling mechanic which is central to this game, I created a scalable box. It can be picked up using raycasting when
+            To be able to remove the pushable boulders and also expand on the scaling mechanic which is central to this game, I created a scalable box. It can be picked up using raycasting when
              it is small, but be used as a platform when it is large.  
             </p>
             <br>
@@ -185,7 +197,7 @@ A related issue that we found during playtesting is that scaling the player to b
  </p>
           <figure>
             <img src="images/project1-section3.jpg" alt="Feature screenshot 3" class="screenshot glow-image">
-            <figcaption>Caption describing this feature or moment.</figcaption>
+            <figcaption>Game walkthrough</figcaption>
           </figure>
           
           
