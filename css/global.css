@@ -111,7 +111,19 @@ body {
 /* Nav links + buttons */
 .button,
 button,
-a.button-link,
+a.button-link {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: magenta;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+/* Nav links + buttons */
 .nav-link {
   display: inline-block;
   padding: 0.4rem 0.75rem;
